@@ -1,0 +1,967 @@
+2018-08-14 14:25:06 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 12928 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 14:25:06 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 14:25:06 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4facf68f: startup date [Tue Aug 14 14:25:06 CST 2018]; root of context hierarchy
+2018-08-14 14:25:07 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 14:25:07 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 14:25:07 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 14:25:07 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 14:25:07 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 14:25:07 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 14:25:07 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 918 ms
+2018-08-14 14:25:07 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 14:25:07 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 14:25:07 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 14:25:07 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 14:25:07 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:25:08 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4facf68f: startup date [Tue Aug 14 14:25:06 CST 2018]; root of context hierarchy
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:25:08 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:25:08 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 14:25:08 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 14:25:08 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 14:25:08 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 14:25:08 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 14:25:08 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 14:25:08 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.153 seconds (JVM running for 2.726)
+2018-08-14 14:25:21 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 14:25:21 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 14:25:21 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-08-14 14:25:21 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 14:25:21 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 14:25:21 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - ==>  Preparing: select a.*,b.id as uid,b.name as UserName,b.age as UserAge,c.id as tid,c.did,c.dage from orderdetail a, User b ,dd c,user_order d where a.id=d.oid and d.uid=b.id and d.uid=c.did 
+2018-08-14 14:25:21 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - ==> Parameters: 
+2018-08-14 14:25:21 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - <==      Total: 5
+2018-08-14 14:38:35 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 18680 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 14:38:35 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 14:38:35 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d51f06e: startup date [Tue Aug 14 14:38:35 CST 2018]; root of context hierarchy
+2018-08-14 14:38:36 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 14:38:36 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 14:38:36 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 14:38:36 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 14:38:36 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 14:38:36 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 14:38:36 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1004 ms
+2018-08-14 14:38:36 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 14:38:36 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 14:38:36 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 14:38:36 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 14:38:36 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:38:36 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d51f06e: startup date [Tue Aug 14 14:38:35 CST 2018]; root of context hierarchy
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:38:36 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:38:36 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 14:38:36 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 14:38:37 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 14:38:37 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 14:38:37 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 14:38:37 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 14:38:37 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.24 seconds (JVM running for 2.771)
+2018-08-14 14:38:47 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 14:38:47 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 14:38:47 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-14 14:38:47 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 14:38:47 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 14:38:47 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - ==>  Preparing: select a.*,b.id as uid,b.name as UserName,b.age as UserAge,c.id as tid,c.did,c.dage from orderdetail a, User b ,dd c,user_order d where a.id=d.oid and d.uid=b.id and d.uid=c.did 
+2018-08-14 14:38:47 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - ==> Parameters: 
+2018-08-14 14:38:47 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - <==      Total: 5
+2018-08-14 14:38:47 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 14:57:36 [org.springframework.boot.SpringApplication:842] - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@37:79 - no applicable action for [logger], current ElementPath  is [[configuration][SpringProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@42:78 - no applicable action for [logger], current ElementPath  is [[configuration][SpringProfile][logger]]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:276)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:358)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.mybatis.MybatisApplication.main(MybatisApplication.java:16)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@37:79 - no applicable action for [logger], current ElementPath  is [[configuration][SpringProfile][logger]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@42:78 - no applicable action for [logger], current ElementPath  is [[configuration][SpringProfile][logger]]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:67)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:269)
+	... 14 common frames omitted
+2018-08-14 14:58:46 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 15172 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 14:58:46 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 14:58:46 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50a638b5: startup date [Tue Aug 14 14:58:46 CST 2018]; root of context hierarchy
+2018-08-14 14:58:47 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 14:58:47 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 14:58:47 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 14:58:47 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 14:58:47 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 14:58:47 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 14:58:47 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1036 ms
+2018-08-14 14:58:47 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 14:58:47 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 14:58:47 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 14:58:47 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 14:58:47 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:58:47 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50a638b5: startup date [Tue Aug 14 14:58:46 CST 2018]; root of context hierarchy
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:58:47 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 14:58:48 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 14:58:48 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 14:58:48 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 14:58:48 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 14:58:48 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 14:58:48 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 14:58:48 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.261 seconds (JVM running for 2.822)
+2018-08-14 14:59:04 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 14:59:04 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 14:59:04 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-14 14:59:04 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 14:59:04 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 14:59:04 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:00:54 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 6788 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:00:54 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 15:00:54 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31d7b7bf: startup date [Tue Aug 14 15:00:54 CST 2018]; root of context hierarchy
+2018-08-14 15:00:55 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:00:55 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:00:55 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:00:55 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:00:55 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:00:55 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:00:55 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 995 ms
+2018-08-14 15:00:55 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:00:55 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:00:55 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:00:55 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:00:55 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:00:55 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:00:56 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@31d7b7bf: startup date [Tue Aug 14 15:00:54 CST 2018]; root of context hierarchy
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:00:56 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:00:56 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:00:56 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:00:56 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:00:56 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:00:56 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:00:56 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:00:56 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.211 seconds (JVM running for 2.761)
+2018-08-14 15:01:01 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:01:01 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:01:01 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-14 15:01:01 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:01:01 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:01:01 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:01:16 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 19204 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:01:16 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 15:01:16 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f197a46: startup date [Tue Aug 14 15:01:16 CST 2018]; root of context hierarchy
+2018-08-14 15:01:17 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:01:17 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:01:17 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:01:17 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:01:17 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:01:17 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:01:17 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1009 ms
+2018-08-14 15:01:17 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:01:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:01:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:01:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:01:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:01:17 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3f197a46: startup date [Tue Aug 14 15:01:16 CST 2018]; root of context hierarchy
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:01:17 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:01:18 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:01:18 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:01:18 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:01:18 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:01:18 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:01:18 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:01:18 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.185 seconds (JVM running for 2.765)
+2018-08-14 15:01:22 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:01:22 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:01:22 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-08-14 15:01:22 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:01:22 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:01:22 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:01:39 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 13364 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:01:39 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 15:01:39 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15c43bd9: startup date [Tue Aug 14 15:01:39 CST 2018]; root of context hierarchy
+2018-08-14 15:01:40 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:01:40 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:01:40 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:01:40 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:01:40 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:01:40 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:01:40 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 959 ms
+2018-08-14 15:01:40 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:01:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:01:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:01:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:01:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:01:40 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:01:40 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15c43bd9: startup date [Tue Aug 14 15:01:39 CST 2018]; root of context hierarchy
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:01:41 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:01:41 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:01:41 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:01:41 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:01:41 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:01:41 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:01:41 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:01:41 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.18 seconds (JVM running for 2.734)
+2018-08-14 15:01:44 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:01:44 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:01:44 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-08-14 15:01:44 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:01:44 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:01:44 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - ==>  Preparing: select a.*,b.id as uid,b.name as UserName,b.age as UserAge,c.id as tid,c.did,c.dage from orderdetail a, User b ,dd c,user_order d where a.id=d.oid and d.uid=b.id and d.uid=c.did 
+2018-08-14 15:01:44 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - ==> Parameters: 
+2018-08-14 15:01:44 [org.apache.ibatis.logging.jdbc.BaseJdbcLogger:159] - <==      Total: 5
+2018-08-14 15:01:44 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:02:16 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 13632 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:02:16 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 15:02:16 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f209819: startup date [Tue Aug 14 15:02:16 CST 2018]; root of context hierarchy
+2018-08-14 15:02:17 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:02:17 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:02:17 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:02:17 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:02:17 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:02:17 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:02:17 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 970 ms
+2018-08-14 15:02:17 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:02:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:02:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:02:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:02:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:02:17 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4f209819: startup date [Tue Aug 14 15:02:16 CST 2018]; root of context hierarchy
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:02:17 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:02:18 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:02:18 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:02:18 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:02:18 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:02:18 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:02:18 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:02:18 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:02:18 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:02:18 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.205 seconds (JVM running for 2.763)
+2018-08-14 15:02:23 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:02:23 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:02:23 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-08-14 15:02:23 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:02:23 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:02:23 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:04:52 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 15596 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:04:52 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 15:04:52 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ce24aa: startup date [Tue Aug 14 15:04:52 CST 2018]; root of context hierarchy
+2018-08-14 15:04:53 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:04:53 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:04:53 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:04:53 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:04:53 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:04:53 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:04:53 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 961 ms
+2018-08-14 15:04:53 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:04:53 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:04:53 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:04:53 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:04:53 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:04:53 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:04:53 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@27ce24aa: startup date [Tue Aug 14 15:04:52 CST 2018]; root of context hierarchy
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:04:54 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:04:54 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:04:54 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:04:54 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:04:54 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:04:54 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:04:54 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:04:54 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.119 seconds (JVM running for 2.657)
+2018-08-14 15:04:59 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:04:59 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:04:59 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-14 15:04:59 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:04:59 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:04:59 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:05:16 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 18716 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:05:16 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 15:05:16 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4facf68f: startup date [Tue Aug 14 15:05:16 CST 2018]; root of context hierarchy
+2018-08-14 15:05:17 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:05:17 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:05:17 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:05:17 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:05:17 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:05:17 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:05:17 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 948 ms
+2018-08-14 15:05:17 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:05:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:05:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:05:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:05:17 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:05:18 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4facf68f: startup date [Tue Aug 14 15:05:16 CST 2018]; root of context hierarchy
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:05:18 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:05:18 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:05:18 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:05:18 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:05:18 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:05:18 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:05:18 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:05:18 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.133 seconds (JVM running for 2.698)
+2018-08-14 15:05:25 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:05:25 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:05:25 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-14 15:05:25 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:05:25 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:05:25 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:06:39 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 15912 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:06:39 [org.springframework.boot.SpringApplication:663] - The following profiles are active: ${env}
+2018-08-14 15:06:39 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Aug 14 15:06:39 CST 2018]; root of context hierarchy
+2018-08-14 15:06:40 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:06:40 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:06:40 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:06:40 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:06:40 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:06:40 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:06:40 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 970 ms
+2018-08-14 15:06:40 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:06:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:06:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:06:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:06:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:06:40 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Aug 14 15:06:39 CST 2018]; root of context hierarchy
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:06:40 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:06:41 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:06:41 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:06:41 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:06:41 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:06:41 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:06:41 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:06:41 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.235 seconds (JVM running for 2.793)
+2018-08-14 15:06:44 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:06:44 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:06:45 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-08-14 15:06:45 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:06:45 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:06:45 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:09:25 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 15556 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:09:25 [org.springframework.boot.SpringApplication:659] - No active profile set, falling back to default profiles: default
+2018-08-14 15:09:25 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50b472aa: startup date [Tue Aug 14 15:09:25 CST 2018]; root of context hierarchy
+2018-08-14 15:09:26 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:09:26 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:09:26 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:09:26 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:09:26 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:09:26 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:09:26 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1000 ms
+2018-08-14 15:09:26 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:09:26 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:09:26 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:09:26 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:09:26 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:09:26 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50b472aa: startup date [Tue Aug 14 15:09:25 CST 2018]; root of context hierarchy
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:09:26 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:09:27 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:09:27 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:09:27 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:09:27 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:09:27 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:09:27 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:09:27 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:09:27 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:09:27 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.256 seconds (JVM running for 2.796)
+2018-08-14 15:16:03 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 14044 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:16:03 [org.springframework.boot.SpringApplication:663] - The following profiles are active: dev
+2018-08-14 15:16:03 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Aug 14 15:16:03 CST 2018]; root of context hierarchy
+2018-08-14 15:16:04 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:16:04 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:16:04 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:16:04 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:16:04 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:16:04 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:16:04 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 935 ms
+2018-08-14 15:16:04 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:16:04 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:16:04 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:16:04 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:16:04 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:16:04 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Aug 14 15:16:03 CST 2018]; root of context hierarchy
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:16:04 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:16:05 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:16:05 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:16:05 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:16:05 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:16:05 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:16:05 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:16:05 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.139 seconds (JVM running for 2.685)
+2018-08-14 15:16:09 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:16:09 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:16:09 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-08-14 15:16:09 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:16:09 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:16:09 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:16:39 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 14860 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:16:39 [org.springframework.boot.SpringApplication:663] - The following profiles are active: dev
+2018-08-14 15:16:39 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@498d318c: startup date [Tue Aug 14 15:16:39 CST 2018]; root of context hierarchy
+2018-08-14 15:16:40 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:16:40 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:16:40 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:16:40 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:16:40 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:16:40 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:16:40 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 931 ms
+2018-08-14 15:16:40 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:16:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:16:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:16:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:16:40 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:16:40 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@498d318c: startup date [Tue Aug 14 15:16:39 CST 2018]; root of context hierarchy
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:16:40 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:16:40 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:16:40 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:16:40 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:16:41 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:16:41 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:16:41 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:16:41 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.166 seconds (JVM running for 2.699)
+2018-08-14 15:16:43 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:16:43 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:16:43 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-08-14 15:16:43 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:16:43 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:16:43 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:16:58 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 11764 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:16:58 [org.springframework.boot.SpringApplication:663] - The following profiles are active: dev
+2018-08-14 15:16:58 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Aug 14 15:16:58 CST 2018]; root of context hierarchy
+2018-08-14 15:16:59 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:16:59 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:16:59 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:16:59 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:16:59 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:16:59 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:16:59 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 988 ms
+2018-08-14 15:16:59 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:16:59 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:16:59 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:16:59 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:16:59 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:16:59 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:17:00 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@795cd85e: startup date [Tue Aug 14 15:16:58 CST 2018]; root of context hierarchy
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:17:00 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:17:00 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:17:00 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:17:00 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:17:00 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:17:00 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:17:00 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:17:00 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.183 seconds (JVM running for 2.714)
+2018-08-14 15:17:03 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:17:03 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:17:03 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-14 15:17:03 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:17:03 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:17:03 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:17:42 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 18280 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:17:42 [org.springframework.boot.SpringApplication:663] - The following profiles are active: dev
+2018-08-14 15:17:42 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61862a7f: startup date [Tue Aug 14 15:17:42 CST 2018]; root of context hierarchy
+2018-08-14 15:17:43 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:17:43 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:17:43 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:17:43 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:17:43 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:17:43 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:17:43 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 887 ms
+2018-08-14 15:17:43 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:17:43 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:17:43 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:17:43 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:17:43 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:17:43 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:17:44 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@61862a7f: startup date [Tue Aug 14 15:17:42 CST 2018]; root of context hierarchy
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:17:44 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:17:44 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:17:44 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:17:44 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:17:44 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:17:44 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:17:44 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:17:44 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.064 seconds (JVM running for 2.587)
+2018-08-14 15:17:48 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:17:48 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:17:48 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-14 15:17:48 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:17:48 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:17:48 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:18:04 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplicationTests on W39-390043 with PID 13364 (started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:18:04 [org.springframework.boot.SpringApplication:663] - The following profiles are active: dev
+2018-08-14 15:18:04 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3cce57c7: startup date [Tue Aug 14 15:18:04 CST 2018]; root of context hierarchy
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:06 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3cce57c7: startup date [Tue Aug 14 15:18:04 CST 2018]; root of context hierarchy
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:06 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:06 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplicationTests in 2.621 seconds (JVM running for 3.33)
+2018-08-14 15:18:07 [org.springframework.context.support.AbstractApplicationContext:993] - Closing org.springframework.web.context.support.GenericWebApplicationContext@3cce57c7: startup date [Tue Aug 14 15:18:04 CST 2018]; root of context hierarchy
+2018-08-14 15:18:18 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 17688 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:18:18 [org.springframework.boot.SpringApplication:663] - The following profiles are active: dev
+2018-08-14 15:18:18 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6eda5c9: startup date [Tue Aug 14 15:18:18 CST 2018]; root of context hierarchy
+2018-08-14 15:18:19 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:18:19 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:18:19 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:18:19 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:18:19 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:18:19 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:18:19 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 990 ms
+2018-08-14 15:18:19 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:18:19 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:18:19 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:18:19 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:18:19 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:20 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6eda5c9: startup date [Tue Aug 14 15:18:18 CST 2018]; root of context hierarchy
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:20 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:20 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:18:20 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:18:20 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:18:20 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:18:20 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:18:20 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:18:20 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.202 seconds (JVM running for 2.767)
+2018-08-14 15:18:22 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:18:22 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:18:22 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-08-14 15:18:22 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:18:22 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:18:23 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:18:33 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 14420 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:18:33 [org.springframework.boot.SpringApplication:663] - The following profiles are active: dev
+2018-08-14 15:18:33 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20deea7f: startup date [Tue Aug 14 15:18:33 CST 2018]; root of context hierarchy
+2018-08-14 15:18:34 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:18:34 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:18:34 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:18:34 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:18:34 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:18:34 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:18:34 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 991 ms
+2018-08-14 15:18:34 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:18:34 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:18:34 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:18:34 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:18:34 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:35 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20deea7f: startup date [Tue Aug 14 15:18:33 CST 2018]; root of context hierarchy
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:35 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:18:35 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:18:35 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:18:35 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:18:35 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:18:35 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:18:35 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:18:35 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.232 seconds (JVM running for 2.771)
+2018-08-14 15:18:41 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:18:41 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:18:41 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-08-14 15:18:41 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:18:41 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:18:41 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:19:17 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 14056 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:19:17 [org.springframework.boot.SpringApplication:663] - The following profiles are active: dev
+2018-08-14 15:19:17 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@72057ecf: startup date [Tue Aug 14 15:19:17 CST 2018]; root of context hierarchy
+2018-08-14 15:19:18 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:19:18 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:19:18 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:19:18 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:19:18 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:19:18 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:19:18 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 1016 ms
+2018-08-14 15:19:18 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:19:18 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:19:18 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:19:18 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:19:18 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:19:18 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@72057ecf: startup date [Tue Aug 14 15:19:17 CST 2018]; root of context hierarchy
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:19:18 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:19:18 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:19:18 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:19:18 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:19:18 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:19:18 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:19:18 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:19:18 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.24 seconds (JVM running for 2.782)
+2018-08-14 15:19:25 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:19:25 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:19:25 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-08-14 15:19:25 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:19:25 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:19:25 [com.mybatis.service.OrderService:25] - 你好info
+2018-08-14 15:19:34 [org.springframework.boot.StartupInfoLogger:50] - Starting MybatisApplication on W39-390043 with PID 17868 (D:\IDEA_Project\Mybatis\target\classes started by 390766 in D:\IDEA_Project\Mybatis)
+2018-08-14 15:19:34 [org.springframework.boot.SpringApplication:663] - The following profiles are active: pro
+2018-08-14 15:19:34 [org.springframework.context.support.AbstractApplicationContext:590] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@498d318c: startup date [Tue Aug 14 15:19:34 CST 2018]; root of context hierarchy
+2018-08-14 15:19:35 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:91] - Tomcat initialized with port(s): 8080 (http)
+2018-08-14 15:19:35 [org.apache.juli.logging.DirectJDKLog:180] - Initializing ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:19:35 [org.apache.juli.logging.DirectJDKLog:180] - Starting service [Tomcat]
+2018-08-14 15:19:35 [org.apache.juli.logging.DirectJDKLog:180] - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-14 15:19:35 [org.apache.juli.logging.DirectJDKLog:180] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\Java\jdk1.8.0_161\bin;E:\Java\jdk1.8.0_161\jre\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;G:\Windows7Master;E:\Git\cmd;E:\mysql-5.7.21-winx64\bin;E:\apache-maven-3.5.3\bin;D:\nodejs\;C:\Users\390766\AppData\Roaming\npm;.]
+2018-08-14 15:19:35 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring embedded WebApplicationContext
+2018-08-14 15:19:35 [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:285] - Root WebApplicationContext: initialization completed in 985 ms
+2018-08-14 15:19:35 [org.springframework.boot.web.servlet.ServletRegistrationBean:186] - Servlet dispatcherServlet mapped to [/]
+2018-08-14 15:19:35 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-14 15:19:35 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-14 15:19:35 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-14 15:19:35 [org.springframework.boot.web.servlet.AbstractFilterRegistrationBean:245] - Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:19:36 [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:574] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@498d318c: startup date [Tue Aug 14 15:19:34 CST 2018]; root of context hierarchy
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/update]}" onto public java.lang.String com.mybatis.controller.RestController.update()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/create]}" onto public java.lang.String com.mybatis.controller.RestController.create()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/insert]}" onto public java.lang.String com.mybatis.controller.RestController.insert()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/ok]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.ok()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/batchinsert]}" onto public java.lang.String com.mybatis.controller.RestController.batchinsert()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/selectData]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.selectData()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/multiParmQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.multiParmQuery()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/chooseQuery]}" onto public java.util.List<com.mybatis.entity.User> com.mybatis.controller.RestController.chooseQuery()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/mixquery]}" onto public java.util.List com.mybatis.controller.RestController.mixquery()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/resultmapquery]}" onto public java.util.List com.mybatis.controller.RestController.resultmapquery()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OneToMulti]}" onto public java.util.List com.mybatis.controller.RestController.OneToMulti()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToOrders]}" onto public java.util.List com.mybatis.controller.RestController.UserToOrders()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/UserToItem]}" onto public java.util.List com.mybatis.controller.RestController.UserToItem()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/test/OrderToUser]}" onto public java.util.List com.mybatis.controller.RestController.OrderToUser()
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry:547] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:19:36 [org.springframework.web.servlet.handler.AbstractUrlHandlerMapping:373] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-14 15:19:36 [org.springframework.jmx.export.MBeanExporter:433] - Registering beans for JMX exposure on startup
+2018-08-14 15:19:36 [org.springframework.jmx.export.MBeanExporter:895] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-14 15:19:36 [org.springframework.jmx.export.MBeanExporter:668] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-14 15:19:36 [org.apache.juli.logging.DirectJDKLog:180] - Starting ProtocolHandler ["http-nio-8080"]
+2018-08-14 15:19:36 [org.apache.juli.logging.DirectJDKLog:180] - Using a shared selector for servlet write/read
+2018-08-14 15:19:36 [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:206] - Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-14 15:19:36 [org.springframework.boot.StartupInfoLogger:59] - Started MybatisApplication in 2.215 seconds (JVM running for 2.762)
+2018-08-14 15:19:39 [org.apache.juli.logging.DirectJDKLog:180] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-14 15:19:39 [org.springframework.web.servlet.FrameworkServlet:494] - FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-14 15:19:39 [org.springframework.web.servlet.FrameworkServlet:509] - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-08-14 15:19:39 [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2018-08-14 15:19:39 [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2018-08-14 15:19:39 [com.mybatis.service.OrderService:25] - 你好info
