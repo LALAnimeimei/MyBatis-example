@@ -5,7 +5,7 @@
 
 	<groupId>com</groupId>
 	<artifactId>mybatis</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>ver_fortest</version>
 	<packaging>war</packaging>
 
 	<name>mybatis</name>
@@ -25,6 +25,13 @@
 	</properties>
 
 	<dependencies>
+		<!--部署成war包时开启↓↓↓↓-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>compile</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -40,11 +47,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>compile</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -92,7 +95,7 @@
 
 
 		<filters> <!-- 指定使用的 filter -->
-			<filter>src/main/resources/${env}/dev.properties</filter>
+			<filter>src/main/resources/${env}/${env}.properties</filter>
 		</filters>
 
 		<resources>
