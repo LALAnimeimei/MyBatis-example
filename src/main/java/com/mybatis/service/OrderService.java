@@ -2,7 +2,7 @@ package com.mybatis.service;
 
 
 import com.mybatis.entity.orderdetail;
-import com.mybatis.mapper.OrderMapper;
+import com.mybatis.mapper.UserDataSource.OrderMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

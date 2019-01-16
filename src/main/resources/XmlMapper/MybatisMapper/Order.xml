@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.mapper.UserDataSource.OrderMapper">
+    <resultMap id="OrderResultMap" type="orderdetail">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+
+    <resultMap id="OrderToUser" type="orderdetail" extends="OrderResultMap">
+        <association property="user" javaType="User">
+            <id property="id" column="uid"/>
+            <result property="name" column="UserName"/>
+            <result property="age" column="UserAge"/>
+            <collection property="dds" ofType="dd">
+                <id property="id" column="tid"/>
+                <result property="did" column="did"/>
+                <result property="dage" column="dage"/>
+            </collection>
+        </association>
+    </resultMap>
+
+    <select id="OrderToUser" resultMap="OrderToUser">
+        select a.*,b.id as uid,b.name as UserName,b.age as UserAge,c.id as tid,c.did,c.dage from orderdetail a, User b ,dd c,user_order d where a.id=d.oid and d.uid=b.id and d.uid=c.did
+    </select>
+</mapper>

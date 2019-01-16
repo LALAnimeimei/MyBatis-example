@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.mapper.UserDataSource.UserMapper">
+    <resultMap id="UserResultMap" type="User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+    </resultMap>
+    
+    <resultMap id="TwoMixResult" type="User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <association property="uut" javaType="uutable">
+            <id column="uuid" property="id"/>
+            <result column="uu" property="uu"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="OneToMulti" type="User">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="age" property="age"/>
+        <collection property="dds" ofType="dd">
+            <id property="id" column="tid"/>
+            <result property="did" column="did"/>
+            <result property="dage" column="dage"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="UserToOrders" type="User" extends="UserResultMap">
+        <collection property="orders" ofType="orderdetail">
+            <id column="OrderId" property="id"/>
+            <result column="OrderName" property="name"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="UserToItem" type="User" extends="UserResultMap">
+        <collection property="orders" ofType="orderdetail">
+            <id column="OrderId" property="id"/>
+            <result column="OrderName" property="name"/>
+            <collection property="items" ofType="item">
+                <id column="ItemId" property="id"/>
+                <result column="ItemName" property="name"/>
+            </collection>
+        </collection>
+    </resultMap>
+
+
+    <select id="getList" resultMap="UserResultMap">
+        select  * from User
+    </select>
+
+    <!--bean实体插入数据-->
+    <insert id="insertUser"  parameterType="com.mybatis.entity.User">
+        insert INTO  User(name,age) VALUES (#{name},#{age})
+    </insert>
+
+    <!--通过List批量插入数据，这里不考虑大批量插入的性能，一般来讲使用for循环多线程插入效率较高-->
+    <insert id="BatchInsert" parameterType="List">
+        insert into User(name,age) VALUES 
+        <foreach collection="list" item="datalist" index="index" separator=",">
+            (#{datalist.name},#{datalist.age})
+        </foreach>
+    </insert>
+
+    <!--使用map插入，这里的话，主要是包含多个插入条件的时候选择-->
+    <insert id="createUser" parameterType="map">
+        insert into User(name,age) VALUES
+        (#{name},#{age})
+    </insert>
+    
+    <update id="updateUser" parameterType="map">
+        UPDATE User SET name=#{name},age=#{age} where id=#{id}
+    </update>
+
+
+    <select id="selectData" resultMap="UserResultMap">
+        select id,name,age from USER
+        <where>
+            <if test="id!=null  and id>=0">
+                id=#{id}
+            </if>
+        </where>
+        <!--此处有注入风险，传入参数前需要加入参数判断逻辑*-->
+        <if test="sort!=null">
+        order by id ${sort}
+        </if>
+    </select>
+
+    <select id="multiParmQuery" resultMap="UserResultMap">
+        select id,name,age from User
+        <where>
+            <if test="name!=null">
+                name=#{name}
+            </if>
+        </where>
+    </select>
+
+
+    <select id="chooseQuery" resultMap="UserResultMap">
+        select id,name,age from User
+        <where>
+            <choose>
+                <when test="uname!=null">
+                    name=#{uname}
+                </when>
+                <when test="age!=null">
+                    age=#{age}
+                </when>
+                <otherwise>
+                    id>2
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!--直接返回map类型的数据，网上称缺少领域模型支持-->
+    <select id="mixquery" resultType="map">
+        select a.id as user_id,a.name as user_name,a.age as user_age,b.uu as user_uu from User a,uutable b where a.id=b.id
+    </select>
+
+    <select id="resultmapquery" resultMap="TwoMixResult">
+        select a.id,a.name,a.age,b.id as uuid,b.uu from User a,uutable b where a.id=b.id
+    </select>
+
+    <select id="OneToMulti" resultMap="OneToMulti">
+        select a.* ,b.id as tid ,b.did,b.dage  from User a, dd b where a.id=b.did
+    </select>
+
+    <select id="UserToOrders" resultMap="UserToOrders">
+        select a.*,c.id as OrderId,c.name as OrderName from User a,user_order b,orderdetail c where a.id=b.uid and b.oid=c.id
+    </select>
+
+    <select id="UserToItem" resultMap="UserToItem">
+        select a.*,c.id as OrderId,c.name as OrderName,e.id as ItemId,e.name as ItemName from User a,user_order b,orderdetail c,order_item d,item e where a.id=b.uid and b.oid=c.id and c.id=d.oid and d.mid=e.id
+    </select>
+</mapper>

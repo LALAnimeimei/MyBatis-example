@@ -2,8 +2,8 @@ package com.mybatis.service;
 
 import com.mybatis.entity.User;
 import com.mybatis.entity.uutable;
-import com.mybatis.mapper.UserMapper;
-import com.mybatis.mapper.UuMapper;
+import com.mybatis.mapper.UserDataSource.UserMapper;
+import com.mybatis.mapper.UserDataSource.UuMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

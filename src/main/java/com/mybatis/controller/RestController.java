@@ -1,7 +1,7 @@
 package com.mybatis.controller;
 
 import com.mybatis.entity.User;
-import com.mybatis.mapper.UserMapper;
+import com.mybatis.mapper.UserDataSource.UserMapper;
 import com.mybatis.service.OrderService;
 import com.mybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
